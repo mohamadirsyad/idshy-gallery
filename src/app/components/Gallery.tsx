@@ -138,7 +138,7 @@ const Card = ({
         fill
         sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
         className="object-cover"
-        priority={src === "gambar7.jpg"}
+        priority={true}
       />
       <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center text-center opacity-0 hover:opacity-100 transition-opacity duration-300">
         <h2 className="text-lg font-bold">{title}</h2>
