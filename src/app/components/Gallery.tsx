@@ -24,6 +24,8 @@ const detailImages = {
   museummacan: ["museummacan1.jpg", "museummacan2.jpg", "museummacan3.jpg"],
 };
 
+type Title = keyof typeof detailImages; // Mendefinisikan tipe yang valid hanya untuk kunci objek detailImages
+
 const titles = [
   "Jogja",
   "Bandung",
@@ -40,8 +42,9 @@ export default function Gallery() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handleImageClick = (src: string, title: string) => {
+    const titleLowerCase = title.toLowerCase() as Title; // Pastikan title valid
     setSelectedImage(src);
-    setDetailImagesList(detailImages[title.toLowerCase()] || []);
+    setDetailImagesList(detailImages[titleLowerCase] || []);
     setCurrentIndex(0); // reset ke awal saat gambar baru dipilih
   };
 
