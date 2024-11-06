@@ -11,7 +11,7 @@ const images = [
   "cirimpak.jpg",
   "citaCita.jpg",
   "aeon.jpg",
-  "museumMacan.jpg",
+  "museummacan.jpg",
 ];
 
 const detailImages = {
@@ -29,11 +29,11 @@ type Title = keyof typeof detailImages; // Mendefinisikan tipe yang valid hanya 
 const titles = [
   "Jogja",
   "Bandung",
-  "gede",
+  "Gede",
   "Cirimpak",
-  "citacita",
+  "Citacita",
   "Aeon",
-  "museummacan",
+  "Museummacan",
 ];
 
 export default function Gallery() {
