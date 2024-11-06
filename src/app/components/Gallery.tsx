@@ -32,7 +32,7 @@ const titles = [
   "Gede",
   "Cirimpak",
   "citacita",
-  "AEON",
+  "aeon",
   "Museummacan",
 ];
 
