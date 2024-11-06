@@ -10,7 +10,7 @@ const images = [
   "bandung.jpg",
   "gede.jpg",
   "cirimpak.jpg",
-  "citaCita.jpg",
+  "citacita.jpg",
   "aeon.jpg",
   "museummacan.jpg",
 ];
