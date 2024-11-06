@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import Head from "next/head"; // Import Head untuk preload gambar
 
 const images = [
   "jogja.jpg",
@@ -65,36 +66,49 @@ export default function Gallery() {
   };
 
   return (
-    <main className="items-center bg-fuchsia text-white">
-      <div
-        id="gallery"
-        className="flex items-center text-4xl font-bold pt-3 ml-10"
-      >
-        <h1>Gallery</h1>
-      </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
-        {images.map((src, index) => (
-          <Card
-            key={index}
-            src={src}
-            title={titles[index]}
-            onClick={handleImageClick}
+    <>
+      <Head>
+        {/* Preload gambar detail untuk efisiensi loading */}
+        {detailImagesList.map((image) => (
+          <link
+            key={image}
+            rel="preload"
+            href={`/images/${image}`}
+            as="image"
           />
         ))}
-      </div>
+      </Head>
+      <main className="items-center bg-fuchsia text-white">
+        <div
+          id="gallery"
+          className="flex items-center text-4xl font-bold pt-3 ml-10"
+        >
+          <h1>Gallery</h1>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4">
+          {images.map((src, index) => (
+            <Card
+              key={index}
+              src={src}
+              title={titles[index]}
+              onClick={handleImageClick}
+            />
+          ))}
+        </div>
 
-      {/* Menampilkan gambar detail jika ada yang dipilih */}
-      {selectedImage && (
-        <ImageDetail
-          src={detailImagesList[currentIndex]}
-          onClose={closeDetailView}
-          onNext={handleNext}
-          onPrev={handlePrev}
-          showPrev={currentIndex > 0}
-          showNext={currentIndex < detailImagesList.length - 1}
-        />
-      )}
-    </main>
+        {/* Menampilkan gambar detail jika ada yang dipilih */}
+        {selectedImage && (
+          <ImageDetail
+            src={detailImagesList[currentIndex]}
+            onClose={closeDetailView}
+            onNext={handleNext}
+            onPrev={handlePrev}
+            showPrev={currentIndex > 0}
+            showNext={currentIndex < detailImagesList.length - 1}
+          />
+        )}
+      </main>
+    </>
   );
 }
 
@@ -182,6 +196,7 @@ const ImageDetail = ({
           width={800}
           height={600}
           className="object-cover rounded-lg"
+          priority={true} // Gambar detail diberi priority
           style={{ maxWidth: "100%", maxHeight: "80vh", height: "auto" }}
         />
         {/* Tombol navigasi */}
