@@ -31,8 +31,8 @@ const titles = [
   "Bandung",
   "Gede",
   "Cirimpak",
-  "Citacita",
-  "Aeon",
+  "citacita",
+  "aeon",
   "Museummacan",
 ];
 
