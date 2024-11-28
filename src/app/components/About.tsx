@@ -9,7 +9,8 @@ export default function About() {
     >
       <h2 className="text-3xl font-bold mb-4">About</h2>
       <p className="text-lg text-center max-w-2xl">
-        Web ini hanya berisikan Gallery atau foto-foto jalan-jalan aja cuyyy.
+        Web ini hanya untuk hanoy❤️❤️❤️ yang berisikan Gallery foto jalan-jalan
+        aja cuyyy.
       </p>
     </section>
   );

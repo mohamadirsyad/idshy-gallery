@@ -10,12 +10,12 @@ export default function Contact() {
     >
       <h2 className="text-3xl font-bold mb-4">Contact Me</h2>
       <p className="text-lg text-center max-w-2xl mb-6">
-        Free kalo mau ngepoin !!!
+        Free kalo mau ngepoin Mah😎!!!
       </p>
 
       {/* Kontak melalui icon */}
-      <div className="flex flex-col items-center mb-8">
-        <div className="flex items-center space-x-4 mb-4">
+      <div className="flex   md:flex-row sm:flex-col flex-col items-center  gap-6 ">
+        <div className="flex items-center space-x-4 mb-0 ">
           <FaEnvelope className="text-xl" />
           <a
             href="mailto:mohamadirsyad8@gmail.com"

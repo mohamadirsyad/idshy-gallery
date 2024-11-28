@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Gallery from "./components/Gallery";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import ButtonSuprise from "./components/ButtonSuprise";
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
       <div className="relative z-10  justify-center h-full text-white text-center pt-18">
         <VideoBackground />
       </div>
+      <ButtonSuprise />
       <Gallery />
-
       <About />
       <hr />
       <Contact />

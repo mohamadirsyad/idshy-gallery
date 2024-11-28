@@ -15,7 +15,7 @@ export default function Navbar() {
       <div className="flex items-center p-4 bg-slate-950 shadow-lg fixed top-0 left-0 right-0 z-20 justify-between">
         <Link
           href="#home"
-          className="lg:ml-10 md:ml-8 sm:ml-5 ml-2 lg:text-2xl md:text-xl sm:text-lg text-md font-extrabold text-blue-800 hover:text-blue-400 transition duration-300"
+          className="lg:ml-10 md:ml-8 sm:ml-5 ml-2 lg:text-2xl md:text-xl sm:text-lg text-md font-extrabold text-orange-400 hover:text-blue-400 transition duration-300"
         >
           I D S H Y
         </Link>
@@ -31,7 +31,7 @@ export default function Navbar() {
         </div>
 
         {/* Menu navbar utama untuk layar besar */}
-        <ul className="hidden lg:flex lg:gap-5 md:gap-4 sm:gap-3 gap-2 lg:mr-10 md:mr-8 sm:mr-4 mr-0 text-blue-800 lg:text-lg md:text-lg sm:text-md text-sm">
+        <ul className="hidden lg:flex lg:gap-5 md:gap-4 sm:gap-3 gap-2 lg:mr-10 md:mr-8 sm:mr-4 mr-0 text-orange-400 lg:text-lg md:text-lg sm:text-md text-sm">
           <li className="hover:text-blue-400 transition duration-300">
             <Link href="#home">Home</Link>
           </li>
