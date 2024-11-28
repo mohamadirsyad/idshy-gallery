@@ -14,8 +14,8 @@ export default function Contact() {
       </p>
 
       {/* Kontak melalui icon */}
-      <div className="flex   md:flex-row sm:flex-col flex-col items-center  gap-6 ">
-        <div className="flex items-center space-x-4 mb-0 ">
+      <div className="flex md:flex-row sm:flex-col flex-col items-center  gap-6 ">
+        <div className="flex items-center space-x-4 mb-4 ">
           <FaEnvelope className="text-xl" />
           <a
             href="mailto:mohamadirsyad8@gmail.com"
