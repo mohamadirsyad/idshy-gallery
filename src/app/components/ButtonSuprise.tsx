@@ -72,24 +72,24 @@ const ButtonSurprise = () => {
             animate={{ opacity: 1, y: 0 }} // Berakhir dengan tampilan penuh dan posisi normal
             transition={{ type: "spring", stiffness: 300 }} // Durasi dan efek transisi
             whileHover={{ scale: 1.05 }} // Efek zoom saat hover
-            className="max-w-sm mt-10 h-72 rounded-xl overflow-hidden shadow-lg bg-gray-200 text-gray-700 font-bold p-4"
+            className="max-w-sm mt-10 h-96 rounded-xl overflow-hidden shadow-lg bg-gray-200 p-4"
           >
-            <div className="mt-4">
-              <h1 className="flex items-center justify-center">
-                Aseeekkkkk udah jalan 2 tahun ya noy
+            <div className="mt-4 text-gray-700 font-bold md:text-md text-sm">
+              <h1 className="flex items-center justify-center mt-8">
+                Aseeekkkkk udah jalan 2 tahun ya noy katanya pengen di bikinin
+                website gallery gitu ya, ini udah dibikinin nanti tambahin lagi
+                ya foto jalan-jalannya.
               </h1>
-              <h3 className="flex justify-center items-center">
-                katanya pengen di bikinin website gallery gitu ya, ini udah
-                dibikinin nanti tambahin lagi ya foto jalan-jalannya.
+
+              <h3 className="flex justify-center items-center mt-4">
+                ILY Hany❤️ Every second, every minute, every hour, every day,
+                and anytime.
               </h3>
               <h3 className="flex justify-center items-center mt-4">
-                Semoga Langgeng terus yaa!! ILY Hany❤️
-              </h3>
-              <h3 className="flex justify-center items-center">
-                Every second, every minute, every hour, every day, and anytime.
+                Semoga Langgeng terus yaa!!
               </h3>
             </div>
-            <p className="font-extralight text-sm mt-12 flex justify-center">
+            <p className="font-extralight text-gray-700 text-sm md:mt-32 mt-32 flex justify-center">
               ~~Irsyad Siganteng~~
             </p>
           </motion.div>
